@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicios</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio05">
+        <h2 class="exercicio01">Exercicio 01 Antecessor</h2>
+        <button type="button" onclick="antecessorSimples()">Chamar Função</button>
+
+        <script>
+            function antecessorSimples() {
+                let numero1 = parseInt(prompt("Digite um valor: "));
+                numero2 = numero1 - 1;
+                alert("O antecessor de " + numero1 + " é " + numero2);
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio06">
+        <h2 class="exercicio02">Exercicio 02 Area de um Triângulo</h2>
+        <button type="button" onclick="areaTriangulo()">Chamar Função</button>
+
+        <script>
+            function areaTriangulo() {
+                let base = parseFloat(prompt("Digite a base do Triângulo: "));
+                let altura = parseFloat(prompt("Digite a altura do Triângulo: "))
+                calculo = (base * altura) / 2
+                alert("A área do Triângulo é " + calculo)
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio07">
+        <h2 class="exercicio03">Exercicio 03 Conversar de anos de vida em dias</h2>
+        <button type="button" onclick="idade()">Chamar Função</button>
+
+        <script>
+            function idade() {
+                let anos = parseInt(prompt("Digite quantos anos voce tem: "))
+                let meses = parseInt(prompt("Digite a quantidade de meses desde seu útimo aniversário (Entre 0 e 11): "))
+                let dias = parseInt(prompt("Digite a quantidade de dias desde seu último mês versário: "))
+                conversaoEmDias = (anos * 365) + (meses * 30) + dias
+                alert("A quantidade de dias dêsde seu nascimento é " + conversaoEmDias)
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio14">
+        <h2 class="exercicio04">Exercicio 04 (maior ou menor)</h2>
+        <button type="button" onclick="maiorOuMenor()">Chamar Função</button>
+
+        <script>
+            function maiorOuMenor() {
+                let numero = parseInt(prompt("Digite um número: "))
+
+                if (numero > 10) {
+                    alert("O número " + numero + " é maior do que 10")
+                } else {
+                    alert("O número " + numero + " é menor do que 10")
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio15">
+        <h2 class="exercicio05">Exercicio 05 Positivo ou Negativo</h2>
+        <button type="button" onclick="polosDiferentes()">Chamar Função</button>
+
+        <script>
+            function polosDiferentes() {
+                let numero = parseInt(prompt("Digite um número: "))
+
+                if (numero >= 0) {
+                    alert("O número " + numero + " é positivo.")
+
+                } else {
+                    alert("O número " + numero + " é negativo.")
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio16">
+        <h2 class="exercicio06">Exercicio 06 - Cálculo Maçãs</h2>
+        <button type="button" onclick="calculoMacas()">Chamar Função</button>
+
+        <script>
+            function calculoMacas() {
+                let quantidadeMacas = parseInt(prompt("Digite a quantidade de Maçãs: "))
+
+                if (quantidadeMacas < 12) {
+                    total = quantidadeMacas * 1.30
+                    alert("Cada maçã vai sair por R$ 1,30 Sendo " + total + " o valor total.")
+
+                } else {
+                    total = quantidadeMacas * 1
+                    alert("Cada maçã vai sair por R$ 1,00 Sendo " + total + " o valor total.")
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio17">
+        <h2 class="exercicio07">Exercicio 07 - Média Aritimética</h2>
+        <button type="button" onclick="mediaAritimetica()">Chamar Função</button>
+
+        <script>
+            function mediaAritimetica() {
+                let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+                let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+                notaTotal = (nota1 + nota2) / 2
+
+                if (notaTotal >= 6) {
+                    alert("O aluno foi aprovado com a nota " + notaTotal)
+
+                } else {
+                    alert("O aluno foi reprovado com a nota " + notaTotal)
+
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio18">
+        <h2 class="exercicio08">Exercicio 08 - Idade Para Votar</h2>
+        <button type="button" onclick="idadeParaVotar()">Chamar Função</button>
+
+        <script>
+            function idadeParaVotar() {
+                let anoDeNascimento = parseInt(prompt("Digite o ano de nascimento: "))
+                let anoAtual = parseInt(prompt("Digite o ano atual: "))
+
+                idade = anoAtual - anoDeNascimento
+                if (idade >= 16) {
+                    alert("Pode votar!")
+                } else {
+                    alert("Não pode votar!")
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio20">
+        <h2 class="exercicio09">Exercicio 09 - Ordem Crescente</h2>
+        <button type="button" onclick="escreverOrdem()">Chamar Função</button>
+
+        <script>
+            function escreverOrdem() {
+                let valor1 = parseInt(prompt("Digite um valor: "))
+                let valor2 = parseInt(prompt("Digite outro valor: "))
+
+                if (valor1 > valor2) {
+                    alert(`O valor ${valor1} é maior que o valor ${valor2}.`)
+                } else {
+                    alert(`O valor ${valor2} é maior que o valor ${valor1}.`)
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio21">
+        <h2 class="exercicio10">Exercicio 10 - Partida de Xadrez (Tempo de Partida)</h2>
+        <button type="button" onclick="tempoDePartida()">Chamar Função</button>
+
+        <script>
+            function tempoDePartida() {
+                let inicio = parseInt(prompt("Digite o horário de início(Sem os minutos): "))
+                let final = parseInt(prompt("Digite o valor de término da partida: "))
+
+                if (final > inicio) {
+                    resultado = final - inicio
+                    alert(`O jogo durou ${resultado} horas.`)
+                } else if (inicio > final) {
+                    resultado = 24 - inicio + final
+                    alert(`O jogo durou ${resultado} horas.`)
+                } else if (inicio = final) {
+                    resultado = 24 - inicio + final
+                    alert(`O jogo durou ${resultado} horas.`)
+                } else {
+                    alert("Não foi possivel calcular...")
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio22">
+        <h2 class="exercicio11">Exercicio 11 - Cálculo Horas de Trabalho</h2>
+        <button type="button" onclick="horasExtrasTrabalhadasDinhairo()">Chamar Função</button>
+
+        <script>
+
+            function horasExtrasTrabalhadasDinhairo() {
+                let horasTrabalhadas = parseFloat(prompt("Digite a quantidade de horas trabalhadas no mês: "))
+                let salarioPorHora = parseFloat(prompt("Digite a quantidade que voce ganha por hora: "))
+
+                if (horasTrabalhadas > 160) {
+                    salario = salarioPorHora * 160
+                    horasExtras = horasTrabalhadas - 160
+                    acrescimo = (horasExtras / 100 * 50) + horasExtras
+                    salarioTotal = acrescimo + salario
+
+                    alert(`Seu salário é ${salario}, sendo ${salarioTotal} o salário total com horas extras.`)
+
+                } else {
+                    salario = salarioPorHora * 160
+                    alert(`Seu salário total é ${salario}.`)
+                }
+            }
+        </script>
+
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio23">
+        <h2 class="12exercicio">Exercicio 12 - Peso Ideal</h2>
+        <button type="button" onclick="pesoIdeal()">Chamar Função</button>
+
+        <script>
+
+            function pesoIdeal() {
+                let nome = prompt("Qual o seu nome?")
+                let sexo = prompt("Qual o seu sexo? Em letras minúsculas.")
+                let altura = prompt("Qual a sua altura?")
+
+                let pesoIdealMasculino = parseFloat((72.7 * altura) - 58).toFixed(2)
+                let pesoIdealFeminino = parseFloat((62.1 * altura) - 44.7).toFixed(2)
+
+                if (sexo == "m") {
+                    alert(`Olá ${nome}, o peso ideal segundo a sua altura é ${pesoIdealMasculino}`)
+                } else if (sexo == "f") {
+                    alert(`Olá ${nome}, o peso ideal segundo a sua altura é ${pesoIdealFeminino}`)
+                } else {
+                    alert(`Não consegui reconhecer o Sexo.`)
+                }
+            }
+        </script>
+
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio24">
+        <h2 class="13exercicio">Exercicio 13 - Comissão em Porcentagem</h2>
+        <button type="button" onclick="comissaoVendas()">Chamar Função</button>
+
+        <script>
+
+            function comissaoVendas() {
+                let salario = parseFloat(prompt(`Digite o seu salário fixo:`))
+                let totalVendas = parseFloat(prompt("Digite o valor total de vendas:"))
+
+                if (totalVendas <= 1500) {
+                    valorTotalDeComissao = 3 * totalVendas / 100
+                    ganhoTotal = valorTotalDeComissao + salario
+
+                    alert(`O total de ganhos a receber é de R$${ganhoTotal} reais, sendo R$${valorTotalDeComissao} Reais de comissão.`)
+                } else if (totalVendas > 1500) {
+                    valorTotalDeComissao1 = 3 * 1500 / 100
+                    valorTotalDeComissao2 = (5 * (totalVendas - 1500)) / 100
+                    valorTotal = valorTotalDeComissao1 + valorTotalDeComissao2
+                    ganhoTotal = valorTotal + salario
+
+                    alert(`O total de ganhos a receber é de R$${ganhoTotal} reais, sendo R$${valorTotal} Reais de comissão.`)
+                } else {
+                    alert(`Não foi possivel encontrar os valores.`)
+                }
+            }
+
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio25">
+        <h2 class="14exercicio">Exercicio 14 - Saldo Bancário</h2>
+        <button type="button" onclick="negativoPositivo()">Chamar Função</button>
+
+        <script>
+            function negativoPositivo() {
+                let numeroConta = parseInt(prompt(`Digite o número da sua conta:`))
+                let saldoConta = parseFloat(prompt(`Digite o saldo da sua conta:`))
+                let debitoConta = parseFloat(prompt(`Digite o valor debitado de sua conta:`))
+                let creditoConta = parseFloat(prompt(`Digite o valor de créditos da sua conta:`))
+                //  processamento
+                let saldoAtual = saldoConta - debitoConta + creditoConta
+                // saida
+                if (saldoAtual < 0) {
+                    alert(`A conta ${numeroConta} está com o saldo negativo de R$ ${saldoAtual}`)
+                } else if (saldoAtual == 0) {
+                    alert(`A conta ${numeroConta} está com o saldo de R$ ${saldoAtual}`)
+                } else {
+                    alert(`A conta ${numeroConta} está com o saldo positivo de R$ ${saldoAtual}`)
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio26">
+        <h2 class="15exercicio">Exercicio 15 - Calculo Média Estoque</h2>
+        <button type="button" onclick="mediaEstoque()">Chamar Função</button>
+
+        <script>
+            function mediaEstoque() {
+                let atualEstoque = parseInt(prompt(`Digite a quantidade atual de produtos no estoque:`))
+                let estoqueMaximo = parseInt(prompt(`Digite a capacidade maxima do estoque:`))
+                let estoqueMinimo = parseInt(prompt(`Digite a capacidade minima do estoque:`))
+
+                let quantidadeMedia = parseFloat(((estoqueMaximo + estoqueMinimo) / 2))
+
+                if (atualEstoque >= quantidadeMedia) {
+                    alert(`Seu estoque está acima da média com ${atualEstoque} produtos, não efetuar compra.`)
+                } else {
+                    alert(`Seu estoque está abaixo da média com ${atualEstoque} produtos, efetuar compra.`)
+                }
+            }
+        </script>
+    </main>
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio27">
+        <h2 class="16exercicio">Exercicio 16 - Negativo, Positivo ou Zero</h2>
+        <button type="button" onclick="negativoPositivoOuNegativo()">Chamar Função</button>
+
+        <script>
+            function negativoPositivoOuNegativo() {
+                let valor = parseFloat(prompt(`Digite um valor:`))
+
+                if (valor > 0) {
+                    alert(`O valor ${valor} é Positivo.`)
+                } else if (valor < 0) {
+                    alert(`O valor ${valor} é Negativo.`)
+                } else {
+                    alert(`O valor ${valor} é Zero.`)
+                }
+            }
+
+        </script>
+    </main>
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio28">
+        <h2 class="17exercicio">Exercicio 17 - Maior de 3 Valores</h2>
+        <button type="button" onclick="maiorNumero()">Chamar Função</button>
+
+        <script>
+            function maiorNumero() {
+                let valor1 = parseFloat(prompt(`Digite o primeiro valor:`))
+                let valor2 = parseInt(prompt(`Digite o segundo valor:`))
+                let valor3 = parseInt(prompt(`Digite o terceiro valor:`))
+
+                if (valor1 > valor2 && valor1 > valor3) {
+                    alert(`O valor ${valor1}`)
+                } else if (valor2 > valor1 && valor2 > valor3) {
+                    alert(`O valor ${valor2}`)
+                } else if (valor3 > valor1 && valor3 > valor2) {
+                    alert(`O valor ${valor3}`)
+                } else {
+                    alert(`Não foi possivel reconhecer os valores.`)
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio29">
+        <h2 class="18exercicio">Exercicio 18 - A soma dos 2 Maiores</h2>
+        <button type="button" onclick="somaDeDois()">Chamar Função</button>
+
+        <script>
+            function somaDeDois() {
+                let valor1 = parseInt(prompt(`Digite o primeiro valor:`))
+                let valor2 = parseInt(prompt(`Digite o segundi valor:`))
+                let valor3 = parseInt(prompt(`Digite o terceiro valor:`))
+
+                if (valor1 > valor2 && valor1 > valor3) {
+
+                    if (valor2 > valor3) {
+                        let somaMaiores = valor1 + valor2
+                        alert(`A soma dos dois maiores números (${valor1} e ${valor2}) é ${somaMaiores}`)
+                    } else {
+                        let somaMaiores = valor1 + valor3
+                        alert(`A soma dos dois maiores números (${valor1} e ${valor3}) é ${somaMaiores}`)
+                    }
+
+                } else if (valor2 > valor1 && valor2 > valor3) {
+
+                    if (valor1 > valor3) {
+                        let somaMaiores = valor2 + valor1
+                        alert(`A soma dos dois maiores números (${valor2} e ${valor1}) é ${somaMaiores}`)
+                    } else {
+                        let somaMaiores = valor2 + valor3
+                        alert(`A soma dos dois maiores números (${valor2} e ${valor3}) é ${somaMaiores}`)
+                    }
+
+                } else if (valor3 > valor1 && valor3 > valor2) {
+
+                    if (valor1 > valor2) {
+                        let somaMaiores = valor3 + valor1
+                        alert(`A soma dos dois maiores números (${valor3} e ${valor1}) é ${somaMaiores}`)
+                    } else {
+                        let somaMaiores = valor3 + valor2
+                        alert(`A soma dos dois maiores números (${valor3} e ${valor2}) é ${somaMaiores}`)
+                    }
+                } else {
+                    alert(`Não foi possivel reconhecer os valores.`)
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+    <main class="exercicio30">
+        <h2 class="19exercicio">Exercicio 19 - Ordem Crescente Entre 3 Valores</h2>
+        <button type="button" onclick="ordem()">Chamar Função</button>
+
+        <script>
+            function ordem() {
+                let valor1 = parseInt(prompt("Digite um valor"))
+                let valor2 = parseInt(prompt("Digite outro valor"))
+                let valor3 = parseInt(prompt("Digite outro valor"))
+
+                if (valor1 > valor2 && valor1 > valor3) {
+                    //valor1 é o maior
+                    if (valor2 > valor3) {
+                        //O valor2 é o do meio
+                        //O valor3 é o menor
+                        alert(`A ordem correta é ${valor3}, ${valor2} e ${valor1}`)
+                    } else {
+                        //O valor3 é o do meio
+                        //O valor2 é o menor
+                        alert(`A ordem correta é ${valor2}, ${valor3} e ${valor1}`)
+                    }
+
+                } else if (valor2 > valor1 && valor2 > valor3) {
+                    //O valor2 é o maior
+                    if (valor1 > valor3) {
+                        //O valor1 é o do meio
+                        //O valor3 é o menor
+                        alert(`A ordem correta é ${valor3}, ${valor1} e ${valor2}`)
+                    } else {
+                        //O valor3 é o do meio
+                        //O valor1 é o menor
+                        alert(`A ordem correta é ${valor1}, ${valor3} e ${valor2}`)
+                    }
+                } else {
+                    //O valor3 é o maior
+                    if (valor2 > valor1) {
+                        //O valor2 é o do meio
+                        //O valor1 é o menor
+                        alert(`A ordem correta é ${valor1}, ${valor2} e ${valor3}`)
+                    } else {
+                        //O valor1 é o do meio
+                        //O valor2 é o menor
+                        alert(`A ordem correta é ${valor2}, ${valor1} e ${valor3}`)
+                    }
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+    <main class="exercicio31">
+        <h2 class="20exercicio">Exercicio 20 - Proporção de um triângulo</h2>
+        <button type="button" onclick="triangulo()">Chamar Função</button>
+
+        <script>
+            function triangulo() {
+                let a = parseInt(prompt("Digite o valor A:"));
+                let b = parseFloat(prompt("Digite o valor B"));
+                let c = parseInt(prompt("Digite o valo C"));
+
+                if (a < b + c && b < a + c && c < a + b) {
+                    alert("Os valores formam um triângulo.");
+                }
+                else {
+                    alert("Os valores não formam um triângulo.");
+                }
+            }
+        </script>
+    </main>
+
+    <!-- ------------------------------------------------- -->
+
+</body>
+
+</html>
